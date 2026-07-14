@@ -1,0 +1,91 @@
+site_name: Programmering B
+
+theme:
+  name: material
+  language: da
+  logo: assets/images/aatg-logo-hvid.svg
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+  palette:
+    - scheme: default
+      primary: blue grey
+      toggle:
+        icon: material/weather-sunny
+        name: Skift til dark mode
+    - scheme: slate
+      primary: teal
+      toggle:
+        icon: material/weather-night
+        name: Skift til light mode
+
+extra:
+  homepage: https://aatg.dk/studieretninger/gametech/
+  generator: false
+  copyright: "© 2026 Jakob Polcwiartek"
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/logo-link.js
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Forside: index.md
+  - Forløbsskabelon: forloebsskabelon.md
+  - Logbog & video:
+      - Overblik: logbog/index.md
+      - Skabeloner: logbog/skabeloner.md
+      - Video-aflevering: logbog/video_aflevering.md
+  - Vurdering:
+      - Overblik: vurdering/index.md
+      - Kriterier: vurdering/kriterier.md
+      - Mini-synopsis skabelon: vurdering/mini_synopsis_skabelon.md
+  - 1.g:
+      - Overblik: 1g/index.md
+      - F01 Intro & logbog: 1g/f01_intro_logbog.md
+      - F02 Basics & kontrol: 1g/f02_basics_kontrol.md
+      - F03 Metoder: 1g/f03_metoder_dekomponering.md
+      - F04 Arrays/lister/algoritmer: 1g/f04_arrays_lister_algoritmer.md
+      - F05 OOP light: 1g/f05_oop_light.md
+      - F06 Mini-projekt (konsolspil): 1g/f06_miniprojekt_konsolspil.md
+  - 2.g:
+      - Overblik: 2g/index.md
+      - F01 OOP & arkitektur: 2g/f01_oop_arkitektur.md
+      - F02 Collections/LINQ/algoritmer: 2g/f02_collections_linq_algoritmer.md
+      - F03 State/events i konsol: 2g/f03_state_events_i_konsol.md
+      - F04 Persistens (filer/JSON): 2g/f04_persistens_filer_json.md
+      - F05 API/HTTP: 2g/f05_api_http.md
+      - F06 Unity on-ramp: 2g/f06_unity_onramp.md
+      - F07 Unity MVP1: 2g/f07_unity_mvp1.md
+      - F08 Unity MVP2: 2g/f08_unity_mvp2.md
+      - F09 Årsprøve-træning: 2g/f09_aarsproeve_træning.md
+  - 3.g:
+      - Overblik: 3g/index.md
+      - SO6 (august): 3g/so6_spildesign_august.md
+      - F01 Bridge: 3g/f01_bridge_fra_analyse_til_kode.md
+      - F02 Unity arkitektur II: 3g/f02_unity_arkitektur_ii.md
+      - F03 Data persistens & Git: 3g/f03_data_persistens_git.md
+      - F04 AI/pathfinding: 3g/f04_ai_pathfinding.md
+      - F05 Test/debug/performance: 3g/f05_test_debug_performance.md
+      - F06 Vertical slice: 3g/f06_vertical_slice_projekt.md
+      - F07 Eksamensforberedelse: 3g/f07_eksamensforberedelse_ukendt_opgave.md
+      - Eksamensprojekt:
+          - Overblik: 3g/eksamensprojekt/index.md
+          - Projektoplæg: 3g/eksamensprojekt/projektoplæg.md
+          - Synopsis skabelon: 3g/eksamensprojekt/synopsis_skabelon.md
+          - Afleveringskrav: 3g/eksamensprojekt/afleveringskrav.md
