@@ -87,7 +87,7 @@ Der gives **én samlet karakter** ud fra en helhedsvurdering, der dækker **begg
 
 !!! info "Officielle karakterer vs. interpolerede"
 
-    De officielle vejledende karakterbeskrivelser for faget findes kun for **12, 7 og 02** (sort tekst nedenfor) — de tre "ankerpunkter" i skalaen. De resterende fire karakterer (<span style="color:var(--md-accent-fg-color)">**10, 4, 00 og -3**, vist i orange</span>) har ingen fagspecifik, officiel beskrivelse i censorark eller vejledning — de er et **estimat**, udledt ved logisk interpolation mellem de officielle datapunkter og den nationale 7-trins-skalas generelle betegnelser. Brug de orange rækker som en pejling på niveauforskelle, ikke som en officiel kilde.
+    De officielle, vejledende karakterbeskrivelser for faget findes kun for **12, 7 og 02** (vist med sort nedenfor) — skalaens tre "ankerpunkter". De resterende fire karakterer (<span style="color:var(--md-accent-fg-color)">**10, 4, 00 og -3**, vist i orange</span>) har ingen fagspecifik, officiel beskrivelse i censorark eller vejledning. De er et **estimat**, udledt ved logisk interpolation mellem de officielle datapunkter og den generelle definition af 7-trins-skalaen. Brug derfor de orange rækker som en vejledende rettesnor, ikke som en officiel kilde.
 
 | Karakter | Betegnelse | Beskrivelse |
 |---|---|---|
