@@ -17,6 +17,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
+    - navigation.expand
     - content.code.copy
   palette:
     - media: "(prefers-color-scheme: dark)"
