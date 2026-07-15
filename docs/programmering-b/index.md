@@ -45,15 +45,49 @@ Der lægges vægt på, at du ikke kun kan skrive kode, men også kan:
 
 ## Struktur
 
-Materialet er opdelt i tre årgange, der bygger direkte oven på hinanden:
+Materialet er opdelt i tre årgange, der bygger direkte oven på hinanden. Hver årgang er igen delt op i fire **Studie+-forløb** (SP1-SP12 i alt) — større, sammenhængende temaer — som hver især dækker over flere mindre **underforløb** (F1.1, F1.2 osv.), én side pr. underforløb:
 
-- **[1.g](1g/index.md)** — Konsol-C# uden OOP: fra første program til kontrolstrukturer, metoder, strings/arrays, og et afsluttende terningespilsprojekt (Meyer).
-- **[2.g](2g/index.md)** — Objektorienteret programmering for alvor (klasser, arv, polymorfi og **interfaces**), introduktion til Unity, en afstikker til datastrukturer og algoritmer (DSA), og et Unity-MVP hvor sortering indgår som gameplay-mekanik. Afsluttes med mundtlig årsprøve.
-- **[3.g](3g/index.md)** — Året starter med et tværfagligt analyseforløb (SO6, sammen med Kom/IT A), fortsætter med rekursion, state machines og softwarearkitektur, og eksamensprojektet rykkes bevidst frem til januar/februar. Faget afsluttes **ikke** på eksamensprojektet, men med et dedikeret eksamensklargøringsforløb.
+- **[1.g](1g/index.md)** — Konsol-C# uden OOP: fra første program (SP1) over kontrolstrukturer og loops (SP2) til metoder, strings og arrays (SP3), og et afsluttende terningespilsprojekt, Meyer (SP4).
+- **[2.g](2g/index.md)** — Objektorienteret programmering for alvor, inkl. **interfaces** (SP5), introduktion til Unity (SP6), en afstikker til datastrukturer og algoritmer (SP7), og et Unity-MVP hvor sortering indgår som gameplay-mekanik (SP8). Afsluttes med mundtlig årsprøve.
+- **[3.g](3g/index.md)** — Året starter med et tværfagligt analyseforløb (SP9, SO6 sammen med Kom/IT A), fortsætter med rekursion, state machines og softwarearkitektur (SP10), eksamensprojektet rykkes bevidst frem til januar/februar (SP11), og faget afsluttes **ikke** på eksamensprojektet, men med et dedikeret eksamensklargøringsforløb (SP12).
 
-Brug menuen til venstre til at navigere mellem årgange og emner.
+Brug menuen til venstre til at navigere: årgang → Studie+-forløb → underforløb.
 
 ---
+
+## Studievaner, der virker i dette fag
+
+Programmering B er ikke et fag, man skimmer sig igennem. Kode læses anderledes end en tekstbog — én overset linje, ét misforstået ord, og resten giver ikke mening. Det, der virker bedst:
+
+- **Sid koncentreret, ikke i baggrunden.** Sæt dig et sted uden forstyrrelser og afsæt sammenhængende tid — programmering kræver, at du holder flere ting i hovedet ad gangen, hvilket ikke fungerer, hvis du samtidig skimmer telefonen.
+- **Læs kode linje for linje, ikke diagonalt.** Når du møder et kodeeksempel, så læs det så du reelt forstår, hvad hver linje gør — ikke bare at det "ser rigtigt ud". Kør det selv, og ændr på det, indtil du er sikker.
+- **Forstå, før du går videre.** Hvis en linje ikke giver mening, så stop og undersøg den, i stedet for at læse hen over den og håbe, det klarer sig. Fagets stof bygger tæt oven på sig selv — huller tidligt gør det svært at følge med senere.
+- **Byg i små skridt.** Skriv lidt, kør det, se om det virker, byg videre. Undgå at skrive en hel opgave færdig, før du tester den første gang.
+- **Brug fejlmeddelelser aktivt.** En fejlmeddelelse er information, ikke et nederlag — læs den roligt, og brug den til at finde problemet, i stedet for at gætte tilfældigt.
+- **Tag øvelsernes sværhedsgrad alvorligt.** 🟢🟡🔴 er der af en grund — det grønne niveau bygger den forståelse, du har brug for, før det gule og røde giver mening.
+- **Kunne forklare din egen kode.** Video devlogs betyder, at du løbende skal kunne sætte ord på, hvad du har lavet og hvorfor — det er samtidig den bedste test af, om du reelt har forstået det, eller bare fik det til at virke.
+
+## Brug af AI som redskab
+
+Generativ AI (ChatGPT, Copilot, Claude m.fl.) er en del af virkeligheden i dag — også i dette fag. Men der er stor forskel på at bruge AI *til* at lære og på at lade AI *overtage* din læring:
+
+**Fornuftig brug** — AI som sparringspartner:
+
+- forklare en fejlmeddelelse, du ikke selv kan tyde
+- sparre om, hvorfor din kode ikke gør, hvad du forventede
+- få et koncept forklaret på en anden måde, end vi gjorde i timen
+
+**Underminerer din læring** — AI som genvej uden om den:
+
+- at få AI til at skrive hele opgaven eller besvarelsen for dig
+- at bruge AI til at "autorette" kode, du aldrig selv har forstået
+- at aflevere kode, du ikke selv kan forklare i din video devlog
+
+!!! tip "Tommelfingerregel"
+
+    Hvis du ikke selv kan forklare, hvad en kodelinje gør og hvorfor den er der, har AI'en lært noget — ikke dig. Har AI hjulpet dig markant med en opgave, så nævn det, ligesom du ville kildehenvise til enhver anden kilde.
+
+Kritisk og ansvarlig brug af generativ AI er eksplicit en del af læreplanens vejledning (2025) og behandles direkte som fagligt stof i forløb F3.5 i 3.g — men principperne herover gælder fra dag ét.
 
 ## Praktisk
 
