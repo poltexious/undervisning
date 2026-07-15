@@ -58,6 +58,7 @@ extra_javascript:
   - javascripts/text-size.js
   - javascripts/reading-progress.js
   - javascripts/move-revision-date.js
+  - javascripts/external-links.js
 
 markdown_extensions:
   - admonition
