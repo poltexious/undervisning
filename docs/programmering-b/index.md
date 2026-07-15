@@ -87,7 +87,7 @@ Generativ AI (ChatGPT, Copilot, Claude m.fl.) er en del af virkeligheden i dag �
 
     Hvis du ikke selv kan forklare, hvad en kodelinje gør og hvorfor den er der, har AI'en lært noget — ikke dig. Har AI hjulpet dig markant med en opgave, så nævn det, ligesom du ville kildehenvise til enhver anden kilde.
 
-Kritisk og ansvarlig brug af generativ AI er eksplicit en del af læreplanens vejledning (2025) og behandles direkte som fagligt stof i forløb F3.5 i 3.g — men principperne herover gælder fra dag ét.
+Kritisk og ansvarlig brug af generativ AI er eksplicit en del af [læreplanens vejledning](https://uvm.dk/uddannelse-til-unge/gymnasiale-uddannelser/fag-og-laereplaner/valgfag-laereplaner/#accordion-programmering-valgfag) (2025) og behandles direkte som fagligt stof i forløb F3.5 i 3.g — men principperne herover gælder fra dag ét.
 
 ## Praktisk
 
