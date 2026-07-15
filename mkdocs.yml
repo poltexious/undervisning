@@ -9,17 +9,29 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
+theme:
+  name: material
+  language: da
+  logo: assets/images/aatg-logo-hvid.svg
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
   palette:
-    - scheme: default
-      primary: blue grey
-      toggle:
-        icon: material/weather-sunny
-        name: Skift til dark mode
-    - scheme: slate
-      primary: teal
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: grey
+      accent: deep orange
       toggle:
         icon: material/weather-night
         name: Skift til light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: grey
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Skift til dark mode
 
 copyright: "© BUILD_YEAR Jakob Polcwiartek"
 
@@ -32,6 +44,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/logo-link.js
+  - javascripts/fag-farver.js
 
 markdown_extensions:
   - admonition
@@ -48,10 +61,10 @@ markdown_extensions:
 
 nav:
   - Forside: index.md
+  - Matematik: matematik/index.md
+  - Fysik: fysik/index.md
   - Programmering B:
       - Oversigt: programmering-b/index.md
       - 1.g: programmering-b/1g.md
       - 2.g: programmering-b/2g.md
       - 3.g: programmering-b/3g.md
-  - Matematik: matematik/index.md
-  - Fysik: fysik/index.md

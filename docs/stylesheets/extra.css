@@ -4,7 +4,24 @@
 
 /* Global grundtekst */
 .md-content {
-    font-size: 1.15rem;
-    /* prøv 1.1rem, 1.15rem eller 1.2rem */
-    line-height: 1.7;
+  font-size: 1.15rem;
+  /* prøv 1.1rem, 1.15rem eller 1.2rem */
+  line-height: 1.7;
+}
+
+/* ===== Fagfarver ===== */
+
+/* Programmering: teal */
+body[data-fag="programmering"] {
+  --md-primary-fg-color: #00796b;
+}
+
+/* Matematik: behagelig rød (dæmpet teglrød) */
+body[data-fag="matematik"] {
+  --md-primary-fg-color: #ad3e3e;
+}
+
+/* Fysik: behagelig blå */
+body[data-fag="fysik"] {
+  --md-primary-fg-color: #3565a0;
 }
