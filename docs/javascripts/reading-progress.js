@@ -24,7 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
     track.style.display = "block";
-    track.style.left = Math.round(rect.left) + "px";
+    // Centrer den 8px brede bjælke (se CSS) på kolonnegrænsen i stedet for
+    // at lade den starte der, så den ikke skubbes helt over i ToC-siden.
+    track.style.left = Math.round(rect.left - 4) + "px";
   }
 
   // Begræns bjælken til det hvide indholdsområde: fra bunden af headeren
