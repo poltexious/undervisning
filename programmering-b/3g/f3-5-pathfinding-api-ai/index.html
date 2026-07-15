@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://poltexious.github.io/undervisning/programmering-b/2g/f2-12-forberedelse-aarsproeve/">
+        <link rel="canonical" href="https://poltexious.github.io/undervisning/programmering-b/3g/f3-5-pathfinding-api-ai/">
       
       
-        <link rel="prev" href="../f2-11-filhaandtering/">
+        <link rel="prev" href="../f3-4-softwarearkitektur/">
       
       
-        <link rel="next" href="../../3g/">
+        <link rel="next" href="../f3-6-repetition-synopsis-intro/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>F2.12 Forberedelse til årsprøve - Undervisning – Jakob Polcwiartek</title>
+        <title>F3.5 Pathfinding, API, AI - Undervisning – Jakob Polcwiartek</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#f212-mundtlig-prsentation-og-forberedelse-til-arsprve" class="md-skip">
+        <a href="#f35-valgfritstretch-pathfinding-eget-api-ai-vrktjer" class="md-skip">
           Gå til indholdet
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              F2.12 Forberedelse til årsprøve
+              F3.5 Pathfinding, API, AI
             
           </span>
         </div>
@@ -860,6 +860,435 @@
                 
   
   
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.g
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2.g
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2g/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overblik
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2g/f2-1-oop-klasser-og-enums/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F2.1 OOP: Klasser og enums
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2g/f2-2-arv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F2.2 Arv
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2g/f2-3-polymorfi-og-interfaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F2.3 Polymorfi og interfaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2g/f2-4-unity-essentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F2.4 Unity Essentials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2g/f2-5-unity-junior-programmer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F2.5 Unity Junior Programmer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2g/f2-6-dsa-arrays-og-gennemloeb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F2.6 DSA: Arrays og gennemløb
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2g/f2-7-dsa-bubblesort/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F2.7 DSA: BubbleSort
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2g/f2-8-dsa-selectionsort-big-o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F2.8 DSA: SelectionSort, Big-O
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2g/f2-9-dsa-indbygget-sort/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F2.9 DSA: Indbygget sort
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2g/f2-10-unity-mvp-sortering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F2.10 Unity-MVP med sortering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2g/f2-11-filhaandtering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F2.11 Filhåndtering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2g/f2-12-forberedelse-aarsproeve/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F2.12 Forberedelse til årsprøve
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -881,17 +1310,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-    2.g
+    3.g
   
 
     
@@ -902,12 +1331,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_4">
             <span class="md-nav__icon md-icon"></span>
             
   
-    2.g
+    3.g
   
 
           </label>
@@ -948,14 +1377,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../f2-1-oop-klasser-og-enums/" class="md-nav__link">
+      <a href="../f3-1-so6-spilanalyse/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    F2.1 OOP: Klasser og enums
+    F3.1 SO6: Spilanalyse
   
 
     
@@ -976,14 +1405,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../f2-2-arv/" class="md-nav__link">
+      <a href="../f3-2-interfaces-og-rekursion/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    F2.2 Arv
+    F3.2 Interfaces og rekursion
   
 
     
@@ -1004,14 +1433,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../f2-3-polymorfi-og-interfaces/" class="md-nav__link">
+      <a href="../f3-3-state-machines/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    F2.3 Polymorfi og interfaces
+    F3.3 State machines
   
 
     
@@ -1032,210 +1461,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../f2-4-unity-essentials/" class="md-nav__link">
+      <a href="../f3-4-softwarearkitektur/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    F2.4 Unity Essentials
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../f2-5-unity-junior-programmer/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    F2.5 Unity Junior Programmer
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../f2-6-dsa-arrays-og-gennemloeb/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    F2.6 DSA: Arrays og gennemløb
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../f2-7-dsa-bubblesort/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    F2.7 DSA: BubbleSort
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../f2-8-dsa-selectionsort-big-o/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    F2.8 DSA: SelectionSort, Big-O
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../f2-9-dsa-indbygget-sort/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    F2.9 DSA: Indbygget sort
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../f2-10-unity-mvp-sortering/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    F2.10 Unity-MVP med sortering
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../f2-11-filhaandtering/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    F2.11 Filhåndtering
+    F3.4 Softwarearkitektur
   
 
     
@@ -1272,7 +1505,7 @@
   <span class="md-ellipsis">
     
   
-    F2.12 Forberedelse til årsprøve
+    F3.5 Pathfinding, API, AI
   
 
     
@@ -1290,7 +1523,7 @@
   <span class="md-ellipsis">
     
   
-    F2.12 Forberedelse til årsprøve
+    F3.5 Pathfinding, API, AI
   
 
     
@@ -1357,6 +1590,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Øvelser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pathfinding-som-visuel-forstaelse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pathfinding som visuel forståelse
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementer-bfs-pa-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementér BFS på grid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-eller-eget-bibliotek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A* eller eget bibliotek
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1390,71 +1662,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    3.g
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    3.g
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
               
                 
   
@@ -1462,175 +1669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3g/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overblik
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../3g/f3-1-so6-spilanalyse/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    F3.1 SO6: Spilanalyse
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../3g/f3-2-interfaces-og-rekursion/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    F3.2 Interfaces og rekursion
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../3g/f3-3-state-machines/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    F3.3 State machines
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../3g/f3-4-softwarearkitektur/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    F3.4 Softwarearkitektur
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../3g/f3-5-pathfinding-api-ai/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    F3.5 Pathfinding, API, AI
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../3g/f3-6-repetition-synopsis-intro/" class="md-nav__link">
+      <a href="../f3-6-repetition-synopsis-intro/" class="md-nav__link">
         
   
   
@@ -1658,7 +1697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3g/f3-7-forberedelse-eksamensprojekt/" class="md-nav__link">
+      <a href="../f3-7-forberedelse-eksamensprojekt/" class="md-nav__link">
         
   
   
@@ -1686,7 +1725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3g/f3-8-eksamensprojekt-opstart/" class="md-nav__link">
+      <a href="../f3-8-eksamensprojekt-opstart/" class="md-nav__link">
         
   
   
@@ -1714,7 +1753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3g/f3-9-eksamensprojekt-produkt/" class="md-nav__link">
+      <a href="../f3-9-eksamensprojekt-produkt/" class="md-nav__link">
         
   
   
@@ -1742,7 +1781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3g/f3-10-mundtlig-fremlaeggelse/" class="md-nav__link">
+      <a href="../f3-10-mundtlig-fremlaeggelse/" class="md-nav__link">
         
   
   
@@ -1770,7 +1809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3g/f3-11-practice-run/" class="md-nav__link">
+      <a href="../f3-11-practice-run/" class="md-nav__link">
         
   
   
@@ -1874,6 +1913,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Øvelser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pathfinding-som-visuel-forstaelse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pathfinding som visuel forståelse
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementer-bfs-pa-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementér BFS på grid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-eller-eget-bibliotek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A* eller eget bibliotek
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1915,39 +1993,55 @@
 
 
 
-<h1 id="f212-mundtlig-prsentation-og-forberedelse-til-arsprve">F2.12 – Mundtlig præsentation og forberedelse til årsprøve</h1>
+<h1 id="f35-valgfritstretch-pathfinding-eget-api-ai-vrktjer">F3.5 – Valgfrit/stretch: pathfinding, eget API, AI-værktøjer</h1>
 <div class="admonition info">
 <p class="admonition-title">Om forløbet</p>
 <ul>
-<li><strong>Timer:</strong> 4 (F-semester)</li>
-<li><strong>Studie+-forløb:</strong> SP8 — Ship It: Unity-MVP med sortering som mekanik</li>
-<li><strong>Bog:</strong> Repetition af Part 1-2</li>
+<li><strong>Timer:</strong> 6 (E-semester)</li>
+<li><strong>Studie+-forløb:</strong> SP10 — Architecture Mode: Abstraktion og softwarearkitektur</li>
+<li><strong>Bog:</strong> <em>The C# Player's Guide</em>, Level 30, 33, 34, 48</li>
 </ul>
 </div>
 <div class="admonition abstract">
 <p class="admonition-title">Læringsmål</p>
 <p>Efter forløbet kan du:</p>
 <ul>
-<li>præsentere et af dine programmer mundtligt og besvare uddybende spørgsmål</li>
+<li>forklare, hvordan en simpel pathfinding-algoritme fungerer</li>
+<li>(hvis du vælger det) implementere breadth-first search på et grid</li>
+<li>designe en lille, genbrugelig klassepakke og dokumentere dens funktionalitet</li>
+<li>reflektere over, hvornår generativ AI er et gavnligt fagligt værktøj, og hvornår det underminerer din egen læring</li>
 </ul>
 </div>
 <h2 id="om-forlbet">Om forløbet</h2>
-<p><em>Skriv motivation: 2.g's afsluttende forløb, der forbereder eleven direkte til den mundtlige årsprøve (20 min forberedelse + 20 min eksamination) gennem par-præsentationer og mock-spørgsmål.</em></p>
+<p><em>Skriv motivation: dette er et EKSPLICIT VALGFRIT differentieringsforløb — eleven vælger selv, hvilket af de tre spor der giver mest mening (pathfinding, eget API, eller kritisk AI-refleksion), afhængigt af interesse og overskud. Fremhæv "analyse før konstruktion": pathfinding blev allerede analyseret som flowchart i SO6 (F3.1) — her er det valgfrit at gå videre til faktisk implementering.</em></p>
 <h2 id="lektionsplan">Lektionsplan</h2>
-<p><em>Skriv time-for-time-plan for forløbets 4 timer: repetition af 2.g's kernestof → par-præsentationer af F2.10-projektet → mock-spørgsmål → forventningsafstemning til årsprøvens format.</em></p>
+<p><em>Skriv time-for-time-plan for forløbets 6 timer, struktureret som stationer/valgfrie spor eleverne kan fordybe sig i efter interesse.</em></p>
 <h2 id="teori">Teori</h2>
-<p><em>Skriv et kort, opsummerende afsnit, der samler 2.g's kernestof (OOP, Unity, DSA) som en tjekliste til mundtlig repetition — ingen ny syntaks introduceres i dette forløb.</em></p>
+<p><em>Skriv teoriafsnit (niveaudelt efter spor) om:</em></p>
+<ul>
+<li><em>pathfinding: grid, noder, naboer, breadth-first search, kort om A</em> (kilde: redblobgames.com)*</li>
+<li><em>design af et lille, genbrugeligt API/bibliotek med klar offentlig overflade, dokumentation med XML-kommentarer</em></li>
+<li><em>generativ AI som fagligt værktøj: hensigtsmæssig brug (debugging, forståelse, sparring) vs. uhensigtsmæssig brug (hele besvarelser, autokorrektur)</em></li>
+</ul>
 <h2 id="velser">Øvelser</h2>
-<p>Forløbet er fælles og ikke differentieret ud fra sværhedsgrad — feedbacken til den enkelte elev er derimod individuel.</p>
+<p>Vælg ét (eller flere) af sporene nedenfor efter interesse og overskud.</p>
+<h3 id="pathfinding-som-visuel-forstaelse"><img alt="🟢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f7e2.svg" title=":green_circle:" /> Pathfinding som visuel forståelse</h3>
+<p><em>Undersøg og forklar en pathfinding-algoritme visuelt (fx via redblobgames.com), uden nødvendigvis selv at implementere den.</em></p>
+<h3 id="implementer-bfs-pa-grid"><img alt="🟡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f7e1.svg" title=":yellow_circle:" /> Implementér BFS på grid</h3>
+<p><em>Implementér breadth-first search på et simpelt grid.</em></p>
+<h3 id="a-eller-eget-bibliotek"><img alt="🔴" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f534.svg" title=":red_circle:" /> A* eller eget bibliotek</h3>
+<p><em>Implementér A</em>-algoritmen, eller design et lille, dokumenteret, genbrugeligt bibliotek fra et tidligere projekt.*</p>
 <h2 id="leverance">Leverance</h2>
-<p>Mundtlig par-præsentation af F2.10-projektet, med efterfølgende mock-spørgsmål og lærer-feedback som forberedelse til årsprøven.</p>
+<p>Afhænger af valgt spor: en pathfinding-implementering eller -forklaring, et lille dokumenteret bibliotek, eller en skriftlig/mundtlig refleksion over AI-brug — med devlog.</p>
 <h2 id="ls-mere">Læs mere</h2>
 <div class="admonition tip">
 <p class="admonition-title">Fra bogen og andre kilder</p>
 <ul>
-<li>Genlæs relevante afsnit fra <strong><em>The C# Player's Guide</em>, Part 1-2</strong>, hvis du er i tvivl om noget grundlæggende før årsprøven.</li>
+<li><strong><em>The C# Player's Guide</em>, Level 30, 33, 34, 48</strong> understøtter API-designsporet.</li>
+<li><a href="https://www.redblobgames.com/">redblobgames.com</a> er den visuelle hovedkilde til pathfinding.</li>
+<li><a href="https://www.w3schools.com/dsa/">w3schools.com/dsa</a> har mere om graf-algoritmer generelt.</li>
 </ul>
-<p>Vi henviser til bogen for uddybning — gå selv på opdagelse i den frem for kun at læse vores egne noter her.</p>
+<p>Vi henviser til bogen og disse kilder for uddybning — gå selv på opdagelse i dem frem for kun at læse vores egne noter her.</p>
 </div>
 
 
@@ -1969,7 +2063,7 @@
     <span class="md-icon" title="Sidste ændring">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="15. juli 2026 21:46:30 CEST">15. juli 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="15. juli 2026 22:11:26 CEST">15. juli 2026</span>
   </span>
 
     
