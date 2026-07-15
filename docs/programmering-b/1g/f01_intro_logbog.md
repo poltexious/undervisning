@@ -29,6 +29,7 @@ Logbogen er ikke bureaukrati for bureaukratiets skyld: den er din egen hukommels
 - `dotnet new console` — hvad opretter kommandoen?
 - `Console.WriteLine` og programmets opbygning
 - Køre programmet med `dotnet run`
+- Eksperiment: skriv et Hello World i en `.txt`-fil og omdøb til `.cs` — hvorfor er et IDE nødvendigt?
 - Fejlmeddelelser er ikke farlige — sådan læser du dem
 
 **Time 3 — Arbejdsgang og logbog**
@@ -79,6 +80,50 @@ dotnet run
 !!! tip "Hvorfor ser koden sådan ud?"
 
     Du undrer dig måske over, at der ikke står noget om en `class` eller en `Main`-metode, som du måske har set i eksempler andre steder. Det er fordi C# tillader denne forenklede skrivemåde (*top-level statements*), som er perfekt til at komme hurtigt i gang. Senere i faget (i F05) lærer vi den fulde, klassebaserede opbygning — den samme, som du kommer til at bruge i Unity.
+
+### Prøv det uden hjælpemidler: hvorfor har vi brug for et IDE?
+
+Du har nu oplevet, hvor let VS Code gør det at skrive og køre et program. Men hvad er en C#-fil *egentlig*? Prøv dette lille eksperiment for at finde ud af det:
+
+1. Åbn en helt almindelig teksteditor — **ikke** VS Code (fx Notesblok på Windows eller TextEdit på Mac).
+2. Skriv følgende, præcis som det står:
+
+    ```csharp
+    using System;
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+        }
+    }
+    ```
+
+3. Gem filen som `Program.txt`.
+4. Omdøb bagefter filen til `Program.cs` (skift altså kun filendelsen — ikke indholdet).
+
+Ligger `Program.cs` i en projektmappe med en tilhørende `.csproj`-fil, kan `dotnet run` faktisk køre den. Compileren er nemlig ligeglad med, hvilket program du skrev filen i — en C#-fil er i virkeligheden bare en tekstfil med det rigtige indhold og den rigtige filendelse.
+
+!!! tip "Hvad betyder al den ekstra kode?"
+
+    `using System;`, `public class Program` og `static void Main(string[] args)` er den fulde, klassebaserede opbygning af et C#-program — den samme, du senere skal bruge i Unity. Du behøver ikke forstå hvert ord endnu; det lærer du i F05. Læg for nu bare mærke til, hvor meget mere der skal skrives, end da VS Code (og `dotnet new console`) satte det op for dig med én linje kode.
+
+Men læg også mærke til noget andet, mens du skriver i den almindelige teksteditor: ingen farver på nøgleordene, ingen forslag når du skriver `Console.`, og ingen advarsel hvis du glemmer en tuborgklamme `}` eller et semikolon `;`. Prøv bevidst at glemme et semikolon, og se om du selv kan opdage det uden hjælp.
+
+Det er præcis den hjælp, et IDE som VS Code giver dig: syntaksfarvning, autocomplete og øjeblikkelig fejlmarkering. Jo større dine programmer bliver i løbet af året, jo mere afhænger du af den hjælp.
+
+!!! tip "Ekstra udfordring: en online compiler"
+
+    Hvis du er klar til en ekstra udfordring, eller bare gerne vil kode hurtigt uden at sætte et helt projekt op, kan du prøve en online compiler, fx [Programiz' C#-compiler](https://www.programiz.com/csharp-programming/online-compiler/). Den hjælper langt mindre end VS Code — ingen eller kun meget begrænset autocomplete — hvilket tvinger dig til selv at huske parenteser, semikolon og den korrekte struktur.
+
+    Det gør den god til:
+
+    - hurtigt at afprøve en lille kodesnak, uden at oprette et helt projekt
+    - situationer hvor dit eget IDE af en eller anden grund ikke vil virke
+    - senere i faget, især i DSA-forløbet (F04) om arrays og algoritmer, hvor det er en god øvelse selv at holde ekstra styr på detaljerne
+
+    **Vigtigt:** en online compiler gemmer typisk ikke din kode, hvis du opdaterer (refresher) siden. Husk at kopiere koden over i en fil, når du er færdig, så den ikke går tabt.
 
 ### Fejlmeddelelser er en del af faget
 

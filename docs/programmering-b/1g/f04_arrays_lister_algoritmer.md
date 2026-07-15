@@ -30,6 +30,8 @@
 - *selektionssortering, trin for trin*
 - *algoritmisk tænkning som eksplicit begreb (hvorfor er nogle løsninger hurtigere/bedre end andre?)*
 
+*Genbrug/link evt. tippet om online compilere fra F01 ("Ekstra udfordring") her — det blev specifikt fremhævet som relevant til dette forløb.*
+
 ## Øvelser
 
 *Skriv øvelser med stigende sværhedsgrad, fx et inventory-system (liste af genstande) og en highscore-liste (sortering af scores). Tilføj foldbare løsningsforslag (`??? success`).*
