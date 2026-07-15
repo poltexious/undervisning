@@ -2,6 +2,13 @@
   height: 2.4rem;
 }
 
+/* ===== Aktiv overskrift i indholdsfortegnelsen ===== */
+/* Material farver allerede den overskrift, man aktuelt scroller forbi, i
+   --md-typeset-a-color — gjort fed her, så den er tydeligere at få øje på. */
+.md-sidebar--secondary .md-nav__link--active {
+  font-weight: 700;
+}
+
 /* ===== Årgangs- og SP-sektioner i venstremenuen ===== */
 /* Uden navigation.sections/navigation.expand er "1.g"/"2.g"/"3.g" og SP-
    forløbene under dem almindelige udfoldelige nav-punkter, samme visuelle
