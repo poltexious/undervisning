@@ -22,7 +22,15 @@
 
 ## Teori
 
-*Ingen ny teori — forløbet er mundtlig træning og fælles refleksion over de afsluttede eksamensprojekter.*
+Ingen ny teori — forløbet er mundtlig træning og fælles refleksion over de afsluttede eksamensprojekter.
+
+### Refleksion, mens det er friskt
+
+Når projektet er afleveret, ved du endnu ikke, om du bliver trukket i programmering til eksamen — og der kan gå lang tid, før du ser dit program igen. En grundig, skriftlig eller mundtlig refleksion over, hvad du lavede og lærte, mens processen stadig er frisk i hukommelsen, gør det langt lettere at "genoptage tråden" senere.
+
+### Forbered en disposition til din fremlæggelse
+
+Lav en kort disposition for, hvordan du vil præsentere dit projekt — hvad vil du fremhæve først, hvilke teknikker vil du fremhæve, hvordan vil du runde af? Mød derefter i mindre grupper og hjælp hinanden med at få opbygget en god præsentation, inden I fremlægger for hele klassen.
 
 ## Øvelser
 
@@ -34,6 +42,8 @@ Mundtlig fremlæggelse af eksamensprojektet. Ingen ny skriftlig aflevering.
 
 ## Læs mere
 
-!!! tip "Perspektiv"
+!!! tip "Perspektiv og kilder"
 
     Denne mundtlige træning er direkte forberedelse til den kommende eksamen — brug feedbacken aktivt i den videre forberedelse i F3.11.
+
+    Søren Præstegaard (Odense Tekniske Gymnasium): ["Eksamensprojektet i programmering"](https://emu.dk/sites/default/files/2020-06/Eksamensprojekt%20i%20programmering.pdf) — artiklen bag rådene om refleksion og disposition ovenfor.
