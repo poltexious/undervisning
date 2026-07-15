@@ -38,7 +38,7 @@ Byg et fjende-hierarki med en fælles baseklasse og mindst to afledte klasser.
 
 ### :green_circle: Følg TLOU-eksemplet 1:1
 
-*Genskab det udleverede fjende-hierarki-eksempel præcis som vist.*
+*Genskab det udleverede fjende-hierarki-eksempel nøjagtigt som vist.*
 
 ### :yellow_circle: Eget hierarki (2 niveauer)
 

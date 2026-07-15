@@ -26,6 +26,7 @@ Pushing to `main` triggers `.github/workflows/deploy.yml`, which installs requir
 - Code examples in the teaching material are in C#, matching the Programmering B curriculum.
 - Filenames (and directory names) avoid æ/ø/å — use `ae`/`oe`/`aa` instead (e.g. `1g.md`, not `1.g-årgang.md`). This avoids URL percent-encoding in generated links and avoids git filename-normalization mismatches between macOS (NFD) and Linux (NFC). This only applies to names on disk; the rendered page content itself should still use æ/ø/å.
 - Commit messages are written in Danish and may freely use æ/ø/å — git handles Unicode commit messages without the filename caveats above.
+- Use **"nøjagtig"/"nøjagtigt"**, not "præcis"/"præcist", when the meaning is "exact/accurate" (e.g. "compileren fortæller dig nøjagtigt, hvad der er galt"). The user (a civil engineer who also teaches physics) distinguishes nøjagtighed (accuracy — close to the true value) from præcision (precision — reproducibility of repeated measurements) and wants "præcis" reserved for genuine precision contexts, not used as a generic intensifier.
 - `nav:` in `mkdocs.yml` is maintained manually, not auto-generated — see the Architecture note below on adding new pages.
 - Always run `mkdocs serve` and check affected pages locally before pushing to `main`, since a push directly triggers the live deploy (see Deployment).
 

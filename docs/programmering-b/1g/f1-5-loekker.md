@@ -175,7 +175,7 @@ Denne teknik virker, uanset hvor kompliceret løkken bliver, og er ofte hurtiger
 
 ### Systematisk fejlfinding
 
-Fejlmeddelelser (*compiler errors*) er ikke farlige — de fortæller dig præcis, hvad der er galt, og på hvilken linje. Men nogle fejl er værre: programmet kører, men gør ikke det, du forventede (*logiske fejl*). Her hjælper compileren dig ikke, og du skal selv undersøge, hvad der sker undervejs.
+Fejlmeddelelser (*compiler errors*) er ikke farlige — de fortæller dig nøjagtigt, hvad der er galt, og på hvilken linje. Men nogle fejl er værre: programmet kører, men gør ikke det, du forventede (*logiske fejl*). Her hjælper compileren dig ikke, og du skal selv undersøge, hvad der sker undervejs.
 
 VS Code har en indbygget **debugger**, der lader dig køre programmet ét skridt ad gangen:
 

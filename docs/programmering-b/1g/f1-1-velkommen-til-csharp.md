@@ -74,7 +74,7 @@ dotnet run
 
 ### Når noget går galt
 
-Fejlmeddelelser (*compiler errors*) kan virke uoverskuelige, når du er ny. De er faktisk din bedste ven: compileren fortæller dig præcis, hvad der er galt, og på hvilken linje. Prøv bevidst at lave en fejl for at se, hvordan det ser ud:
+Fejlmeddelelser (*compiler errors*) kan virke uoverskuelige, når du er ny. De er faktisk din bedste ven: compileren fortæller dig nøjagtigt, hvad der er galt, og på hvilken linje. Prøv bevidst at lave en fejl for at se, hvordan det ser ud:
 
 ```csharp
 Console.WriteLine("Denne linje mangler en anførselstegn)

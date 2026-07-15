@@ -49,7 +49,7 @@ bool erRigtigt = svar == "København";
 Console.WriteLine($"Rigtigt svar? {erRigtigt}");
 ```
 
-Programmet udskriver `True` eller `False` — ikke helt så pænt som "Rigtigt!"/"Forkert!", men det er præcis det, du får løst i F1.4, når vi lærer `if`/`else`. Tænk over det, mens du bygger din quiz: hvad ville du hellere have stået der?
+Programmet udskriver `True` eller `False` — ikke helt så pænt som "Rigtigt!"/"Forkert!", men det er nøjagtigt det, du får løst i F1.4, når vi lærer `if`/`else`. Tænk over det, mens du bygger din quiz: hvad ville du hellere have stået der?
 
 !!! tip "Motivation til F1.4"
 
@@ -131,6 +131,6 @@ Konsol-quiz med mindst tre spørgsmål, som eleverne kan vise venner. Ingen vide
 
 !!! tip "Fra bogen og andre kilder"
 
-    - Genlæs ***The C# Player's Guide*, Level 1-8**, hvis du er i tvivl om noget fra F1.1 eller F1.2 — det er præcis det stof, dette forløb repeterer.
+    - Genlæs ***The C# Player's Guide*, Level 1-8**, hvis du er i tvivl om noget fra F1.1 eller F1.2 — det er nøjagtigt det stof, dette forløb repeterer.
 
     Vi henviser til bogen for uddybning — gå selv på opdagelse i den frem for kun at læse vores egne noter her.
