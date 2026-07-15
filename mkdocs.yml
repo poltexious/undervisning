@@ -65,6 +65,13 @@ nav:
   - Fysik: fysik/index.md
   - Programmering B:
       - Oversigt: programmering-b/index.md
-      - 1.g: programmering-b/1g.md
+      - 1.g:
+          - Overblik: programmering-b/1g/index.md
+          - F01 Intro, værktøjer & logbog: programmering-b/1g/f01_intro_logbog.md
+          - F02 Basics & kontrolstrukturer: programmering-b/1g/f02_basics_kontrol.md
+          - F03 Metoder & dekomponering: programmering-b/1g/f03_metoder_dekomponering.md
+          - F04 Arrays, lister & algoritmer: programmering-b/1g/f04_arrays_lister_algoritmer.md
+          - F05 OOP light: programmering-b/1g/f05_oop_light.md
+          - "F06 Mini-projekt: konsolspil": programmering-b/1g/f06_miniprojekt_konsolspil.md
       - 2.g: programmering-b/2g.md
       - 3.g: programmering-b/3g.md
