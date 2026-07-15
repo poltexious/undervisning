@@ -113,12 +113,9 @@ body[data-text-size="large"] {
    forbliver 0 i CSS. En baggrund direkte på sidebaren ville derfor kun
    dække et lille, "svævende" område i toppen.
 
-   .md-sidebar har som standard padding:1.2rem 0, som lægger et hvidt
-   mellemrum ovenpå scrollwrap'ens baggrund — fjernes for sekundær-
-   sidebaren, så baggrunden går helt op til headeren. */
-.md-sidebar--secondary {
-  padding-top: 0;
-}
+   .md-sidebar (både primær og sekundær) har som standard padding:1.2rem 0.
+   Vi rører IKKE ved den her — venstremenuen (.md-sidebar--primary) bruger
+   stadig den, og ToC-teksten skal flugte med den, ikke starte højere. */
 
 /* Material sætter margin:0 .2rem på scrollwrap'en, som ellers ville give
    et smalt hvidt spring i begge sider af baggrunden — nulstillet her, så
@@ -128,13 +125,15 @@ body[data-text-size="large"] {
   background-color: var(--md-default-fg-color--lightest);
   margin-left: 0;
   margin-right: 0;
-  /* Det resterende mellemrum ovenfor kommer fra .md-main__inner sin
-     margin-top:1.5rem, som gælder hele rækken (venstremenu, indhold og
-     ToC). Trækkes op med negativ margin, og kompenseres med padding, så
-     selve "Indholdsfortegnelse"-teksten ikke rykker sig — kun baggrunden
-     udvides op til headeren. */
-  margin-top: -1.5rem;
-  padding-top: 1.5rem;
+  /* Baggrunden trækkes op til headeren med negativ margin. Den skal
+     præcis modsvare sidebarens egen top-afstand (.md-main__inner sin
+     margin-top:1.5rem + sidebarens padding-top:1.2rem = 2.7rem), og
+     padding-top lægger nøjagtig det samme oveni igen, så selve
+     "Indholdsfortegnelse"-teksten lander samme sted som venstremenuens
+     tekst — margin og padding skal gå lige op (begge 2.7rem), ellers
+     forskydes teksten, eller der opstår et hvidt hul foroven. */
+  margin-top: -2.7rem;
+  padding-top: 2.7rem;
   padding-left: 0.6rem;
   padding-right: 0.6rem;
 }
