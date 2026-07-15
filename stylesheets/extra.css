@@ -143,21 +143,26 @@ body[data-text-size="large"] {
    `left`, `top` og `height` sættes dynamisk af JS ud fra positionen af
    .md-sidebar--secondary, .md-header og .md-footer, så bjælken kun dækker
    det hvide indholdsområde — ikke header-banneret eller footeren. */
-/* --lighter (ikke --lightest) så linjen ikke smelter sammen med
-   indholdsfortegnelsens nye baggrundstone, som bruger --lightest. */
+/* --lighter (ikke --lightest) så sporet ikke smelter sammen med
+   indholdsfortegnelsens baggrundstone, som bruger --lightest. Bredden
+   (8px) skal matche offset'et i reading-progress.js, som centrerer
+   bjælken på kolonnegrænsen. */
 #reading-progress-track {
   position: fixed;
-  width: 2px;
+  width: 8px;
+  border-radius: 4px;
   background: var(--md-default-fg-color--lighter);
   z-index: 10;
   pointer-events: none;
   display: none;
+  overflow: hidden;
 }
 
 #reading-progress-fill {
   width: 100%;
   height: 0%;
   background: var(--md-primary-fg-color);
+  box-shadow: 0 0 0.4rem var(--md-primary-fg-color);
   transition: height 0.15s ease-out;
 }
 
