@@ -39,9 +39,13 @@
 
 /* Fremhæver den SP-sektion, den aktuelle side ligger i — Material sætter
    selv md-nav__item--active på forfædre-sektioner til den viste side, så
-   det kræver ingen JS, kun styling af den kombinationen. */
+   det kræver ingen JS, kun styling af den kombinationen.
+   --md-typeset-a-color er den samme variabel, Material selv bruger til
+   aktive nav-links og brødtekst-links (en hardcodet blå/lilla nuance,
+   der gælder når primary:grey er valgt, uafhængig af fagfarven). */
 .md-nav[data-md-level="2"] > .md-nav__list > .md-nav__item--nested.md-nav__item--active > .md-nav__link {
   background-color: var(--md-default-fg-color--lightest);
+  color: var(--md-typeset-a-color);
 }
 
 /* ===== Husket åben/lukket tilstand for årgangs-sektioner ===== */
