@@ -104,4 +104,16 @@ nav:
           - F2.10 Unity-MVP med sortering: programmering-b/2g/f2-10-unity-mvp-sortering.md
           - F2.11 Filhåndtering: programmering-b/2g/f2-11-filhaandtering.md
           - F2.12 Forberedelse til årsprøve: programmering-b/2g/f2-12-forberedelse-aarsproeve.md
-      - 3.g: programmering-b/3g.md
+      - 3.g:
+          - Overblik: programmering-b/3g/index.md
+          - "F3.1 SO6: Spilanalyse": programmering-b/3g/f3-1-so6-spilanalyse.md
+          - F3.2 Interfaces og rekursion: programmering-b/3g/f3-2-interfaces-og-rekursion.md
+          - F3.3 State machines: programmering-b/3g/f3-3-state-machines.md
+          - F3.4 Softwarearkitektur: programmering-b/3g/f3-4-softwarearkitektur.md
+          - F3.5 Pathfinding, API, AI: programmering-b/3g/f3-5-pathfinding-api-ai.md
+          - F3.6 Repetition og synopsis-intro: programmering-b/3g/f3-6-repetition-synopsis-intro.md
+          - F3.7 Forberedelse til eksamensprojekt: programmering-b/3g/f3-7-forberedelse-eksamensprojekt.md
+          - "F3.8 Eksamensprojekt: opstart": programmering-b/3g/f3-8-eksamensprojekt-opstart.md
+          - "F3.9 Eksamensprojekt: produkt": programmering-b/3g/f3-9-eksamensprojekt-produkt.md
+          - F3.10 Mundtlig fremlæggelse: programmering-b/3g/f3-10-mundtlig-fremlaeggelse.md
+          - F3.11 Practice Run: programmering-b/3g/f3-11-practice-run.md
