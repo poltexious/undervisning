@@ -17,6 +17,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
+    - content.code.copy
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
@@ -45,6 +46,8 @@ extra_css:
 extra_javascript:
   - javascripts/logo-link.js
   - javascripts/fag-farver.js
+  - javascripts/text-size.js
+  - javascripts/reading-progress.js
 
 markdown_extensions:
   - admonition
