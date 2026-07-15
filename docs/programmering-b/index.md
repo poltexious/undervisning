@@ -26,13 +26,14 @@ Alt materiale er struktureret efter **årgang**.
 
 ## Hvad arbejder vi med i Programmering B?
 
-I løbet af faget vil du bl.a. arbejde med:
+Faget strækker sig over **186 timer** fordelt på tre år (1.g: 35 t, 2.g: 65 t, 3.g: 86 t). I løbet af faget vil du bl.a. arbejde med:
 
 - grundlæggende programmeringsbegreber (variabler, kontrolstrukturer, metoder)
 - strukturering af kode og problemløsning
-- objektorienteret programmering
-- simple datastrukturer og algoritmisk tænkning
-- udvikling af større programmer og projekter
+- objektorienteret programmering (klasser, arv, polymorfi, interfaces)
+- datastrukturer og algoritmisk tænkning (søgning, sortering, Big-O)
+- rekursion, arkitektur og state machines
+- udvikling af større programmer og projekter i både konsol og Unity
 
 Der lægges vægt på, at du ikke kun kan skrive kode, men også kan:
 
@@ -44,16 +45,11 @@ Der lægges vægt på, at du ikke kun kan skrive kode, men også kan:
 
 ## Struktur
 
-Materialet er opdelt i tre hovedafsnit:
+Materialet er opdelt i tre årgange, der bygger direkte oven på hinanden:
 
-- **1.g**  
-  Introduktion til programmering og grundlæggende C# i konsolmiljø.
-
-- **2.g**  
-  Videre arbejde med objektorienteret programmering, struktur og begyndende større projekter.
-
-- **3.g**  
-  Større sammenhængende programmer, projekter samt forberedelse til årsprøve/eksamen.
+- **[1.g](1g/index.md)** — Konsol-C# uden OOP: fra første program til kontrolstrukturer, metoder, strings/arrays, og et afsluttende terningespilsprojekt (Meyer).
+- **[2.g](2g/index.md)** — Objektorienteret programmering for alvor (klasser, arv, polymorfi og **interfaces**), introduktion til Unity, en afstikker til datastrukturer og algoritmer (DSA), og et Unity-MVP hvor sortering indgår som gameplay-mekanik. Afsluttes med mundtlig årsprøve.
+- **[3.g](3g/index.md)** — Året starter med et tværfagligt analyseforløb (SO6, sammen med Kom/IT A), fortsætter med rekursion, state machines og softwarearkitektur, og eksamensprojektet rykkes bevidst frem til januar/februar. Faget afsluttes **ikke** på eksamensprojektet, men med et dedikeret eksamensklargøringsforløb.
 
 Brug menuen til venstre til at navigere mellem årgange og emner.
 
