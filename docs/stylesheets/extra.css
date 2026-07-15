@@ -2,14 +2,16 @@
   height: 2.4rem;
 }
 
-/* ===== Årgangs-sektioner i venstremenuen ===== */
-/* Uden navigation.sections/navigation.expand er "1.g"/"2.g"/"3.g" almindelige
-   udfoldelige nav-punkter, samme visuelle vægt som forløbslinksene under dem.
-   Selektoren rammer specifikt "nested-i-nested"-punkter — dvs. punkter der
-   selv kan foldes ud OG ligger inde i et andet udfoldeligt punkt (fx "1.g"
-   inde i "Programmering B") — så kun årgangsniveauet fremhæves, ikke
-   forløbslinksene under det. */
-.md-nav__item--nested .md-nav__item--nested > .md-nav__link {
+/* ===== Årgangs- og SP-sektioner i venstremenuen ===== */
+/* Uden navigation.sections/navigation.expand er "1.g"/"2.g"/"3.g" og SP-
+   forløbene under dem almindelige udfoldelige nav-punkter, samme visuelle
+   vægt som F-siderne nederst. Tre niveauer i træet nu: Programmering B
+   (data-md-level="1" er dens BØRN, dvs. årgangene) → årgang
+   (data-md-level="2" er DENS børn, dvs. SP-forløbene) → SP-forløb
+   (data-md-level="3" er F-siderne, ufremhævede). Selektorerne rammer
+   præcis ét niveau hver via data-md-level på den omsluttende <nav>, så
+   årgang og SP-forløb kan style forskelligt. */
+.md-nav[data-md-level="1"] > .md-nav__list > .md-nav__item--nested > .md-nav__link {
   font-weight: 700;
   color: var(--md-primary-fg-color);
   background-color: var(--md-default-fg-color--lightest);
@@ -19,8 +21,27 @@
   margin-top: 0.4rem;
 }
 
-.md-nav__item--nested .md-nav__item--nested > .md-nav__link .md-nav__icon {
+.md-nav[data-md-level="1"] > .md-nav__list > .md-nav__item--nested > .md-nav__link .md-nav__icon {
   color: var(--md-primary-fg-color);
+}
+
+/* SP-forløb: lettere distinktion end årgangen (ingen baggrund/kant), men
+   samme fagfarve (--md-primary-fg-color, fx teal for programmering) i
+   stedet for grå, så de er nemme at få øje på — og tydeligt adskilt fra
+   de almindelige F-sidelinks under dem. */
+.md-nav[data-md-level="2"] > .md-nav__list > .md-nav__item--nested > .md-nav__link {
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  margin-top: 0.3rem;
+}
+
+/* Fremhæver den SP-sektion, den aktuelle side ligger i — Material sætter
+   selv md-nav__item--active på forfædre-sektioner til den viste side, så
+   det kræver ingen JS, kun styling af den kombinationen. */
+.md-nav[data-md-level="2"] > .md-nav__list > .md-nav__item--nested.md-nav__item--active > .md-nav__link {
+  background-color: var(--md-default-fg-color--lightest);
 }
 
 /* ===== Husket åben/lukket tilstand for årgangs-sektioner ===== */
