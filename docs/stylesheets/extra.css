@@ -9,6 +9,17 @@
   line-height: 1.7;
 }
 
+/* ===== Blødere tekstfarve i light mode ===== */
+/* Erstatter sort/hvid-kontrasten (--md-default-fg-color er som standard
+   sort med opacitet) med samme opacitetstrin på en mørk grå i stedet,
+   så det er mindre skærende at læse. Gælder kun light mode ("default"). */
+[data-md-color-scheme="default"] {
+  --md-default-fg-color: #333333de;
+  --md-default-fg-color--light: #3333338a;
+  --md-default-fg-color--lighter: #33333352;
+  --md-default-fg-color--lightest: #33333312;
+}
+
 /* ===== Fagfarver ===== */
 
 /* Programmering: teal */
