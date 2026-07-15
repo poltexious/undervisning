@@ -36,6 +36,14 @@ theme:
 
 copyright: "© BUILD_YEAR Jakob Polcwiartek"
 
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: date
+      locale: da
+      timezone: Europe/Copenhagen
+      fallback_to_build_date: true
+
 extra:
   homepage: https://aatg.dk/studieretninger/gametech/
   generator: false
