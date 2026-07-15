@@ -50,9 +50,15 @@
   --md-default-fg-color--lightest: #33333312;
 }
 
-/* ===== Tekststørrelse-knap ===== */
-/* Ekstra header-knap (indsat af javascripts/text-size.js) ved siden af
-   søgeikonet, stylet som Materials egne header-knapper (fx dark/light). */
+/* ===== Tekststørrelse-knapper ===== */
+/* Tre header-knapper (indsat af javascripts/text-size.js) ved siden af
+   søgeikonet, stylet som Materials egne header-knapper (fx dark/light) —
+   én pr. størrelse, så man klikker direkte i stedet for at cykle. */
+.text-size-group {
+  display: flex;
+  align-items: center;
+}
+
 .text-size-toggle {
   background: none;
   border: none;
@@ -62,18 +68,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.7;
 }
 
-.text-size-toggle[data-current-size="small"] {
+.text-size-toggle[data-size="small"] {
   font-size: 0.75rem;
 }
 
-.text-size-toggle[data-current-size="normal"] {
+.text-size-toggle[data-size="normal"] {
   font-size: 1rem;
 }
 
-.text-size-toggle[data-current-size="large"] {
+.text-size-toggle[data-size="large"] {
   font-size: 1.3rem;
+}
+
+/* Markerer den aktive størrelse, så man kan se hvad der er valgt. */
+.text-size-toggle.is-active {
+  opacity: 1;
+  text-decoration: underline;
+  text-decoration-thickness: 0.15rem;
+  text-underline-offset: 0.2rem;
 }
 
 /* Sætter --content-font-size om, så både brødtekst og bokse (se ovenfor)
@@ -146,13 +161,16 @@ body[data-text-size="large"] {
 /* --lighter (ikke --lightest) så sporet ikke smelter sammen med
    indholdsfortegnelsens baggrundstone, som bruger --lightest. Bredden
    (8px) skal matche offset'et i reading-progress.js, som centrerer
-   bjælken på kolonnegrænsen. */
+   bjælken på kolonnegrænsen.
+   z-index:1 er bevidst lavere end Materials søgekomponenter (z-index:2
+   når søgeresultaterne er åbne), så bjælken forbliver synlig, men lægger
+   sig bag søgefeltet/dropdownet i stedet for ovenpå det. */
 #reading-progress-track {
   position: fixed;
   width: 8px;
   border-radius: 4px;
   background: var(--md-default-fg-color--lighter);
-  z-index: 10;
+  z-index: 1;
   pointer-events: none;
   display: none;
   overflow: hidden;
