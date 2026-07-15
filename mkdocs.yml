@@ -16,8 +16,6 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.expand
     - content.code.copy
   palette:
     - media: "(prefers-color-scheme: dark)"
@@ -59,6 +57,7 @@ extra_javascript:
   - javascripts/reading-progress.js
   - javascripts/move-revision-date.js
   - javascripts/external-links.js
+  - javascripts/remember-nav-state.js
 
 markdown_extensions:
   - admonition
