@@ -85,11 +85,19 @@ Hvis dele af din kode stammer fra andre (fx AI-genereret kode, biblioteker eller
 
 Der gives **én samlet karakter** ud fra en helhedsvurdering, der dækker **begge dele**: både din præsentation af eksamensprojektet og din besvarelse af den trukne opgave.
 
-| Karakter | Betegnelse | Kort beskrivelse |
+!!! info "Officielle karakterer vs. interpolerede"
+
+    De officielle vejledende karakterbeskrivelser for faget findes kun for **12, 7 og 02** (sort tekst nedenfor) — de tre "ankerpunkter" i skalaen. De resterende fire karakterer (<span style="color:var(--md-accent-fg-color)">**10, 4, 00 og -3**, vist i orange</span>) har ingen fagspecifik, officiel beskrivelse i censorark eller vejledning — de er et **estimat**, udledt ved logisk interpolation mellem de officielle datapunkter og den nationale 7-trins-skalas generelle betegnelser. Brug de orange rækker som en pejling på niveauforskelle, ikke som en officiel kilde.
+
+| Karakter | Betegnelse | Beskrivelse |
 |---|---|---|
 | 12 | Fremragende | Præsenteres glimrende og fagligt sikkert; lever op til kravene med kun få uvæsentlige mangler; velbegrundet argumentation for valg af løsninger; besvarer uddybende spørgsmål glimrende og fagligt sikkert. |
+| <span style="color:var(--md-accent-fg-color)">10</span> | <span style="color:var(--md-accent-fg-color)">Fortrinlig</span> | <span style="color:var(--md-accent-fg-color)">Præsenteres sikkert og fagligt velfunderet; lever op til kravene med enkelte mindre væsentlige mangler; fagligt velbegrundet argumentation, om end mindre udtømmende end ved 12; besvarer uddybende spørgsmål sikkert og fagligt velfunderet.</span> |
 | 7 | God | Præsenteres med en del mangler i forhold til kravene; der argumenteres for valg af løsninger; besvarer uddybende spørgsmål tilfredsstillende. |
+| <span style="color:var(--md-accent-fg-color)">4</span> | <span style="color:var(--md-accent-fg-color)">Jævn</span> | <span style="color:var(--md-accent-fg-color)">Præsenteres med en del usikkerhed; lever med adskillige væsentlige mangler op til kravene; argumentationen for valg af løsninger er usikker og mangelfuld; besvarer uddybende spørgsmål usikkert og med mangler.</span> |
 | 02 | Tilstrækkeligt | Præsenteres sparsomt og knapt; lever minimalt acceptabelt op til kravene; besvarer kun sparsomt uddybende spørgsmål. |
+| <span style="color:var(--md-accent-fg-color)">00</span> | <span style="color:var(--md-accent-fg-color)">Utilstrækkelig</span> | <span style="color:var(--md-accent-fg-color)">Præsenteres utilstrækkeligt; lever ikke acceptabelt op til kravene; der argumenteres ikke acceptabelt — eller slet ikke — for valg af løsninger; kan ikke svare acceptabelt på uddybende spørgsmål.</span> |
+| <span style="color:var(--md-accent-fg-color)">-3</span> | <span style="color:var(--md-accent-fg-color)">Ringe</span> | <span style="color:var(--md-accent-fg-color)">Kan ikke præsenteres sammenhængende; lever ikke op til kravene i noget nævneværdigt omfang; ingen reel argumentation for valg af løsninger; kan ikke besvare selv grundlæggende uddybende spørgsmål.</span> |
 
 ## Øvelser
 
