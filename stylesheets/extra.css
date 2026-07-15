@@ -1,0 +1,179 @@
+.md-header__button.md-logo img {
+  height: 2.4rem;
+}
+
+/* ===== Bredere layout ===== */
+/* Materials grid (header, faner og hovedindhold deler alle .md-grid) er som
+   standard låst til 61rem, hvilket giver meget uudnyttet plads i siderne på
+   brede skærme. Øges her, så midtersektionen med selve indholdet bliver
+   bredere — sidebars beholder deres faste bredde, så den ekstra plads går
+   direkte til brødteksten. */
+.md-grid {
+  max-width: 90rem;
+}
+
+/* Global grundtekst */
+/* --content-font-size styrer al skriftstørrelse i artiklen ét sted, så
+   brødtekst og bokse (admonitions/details) altid skalerer ensartet — se
+   "Tekststørrelse-knap" nedenfor for small/large-varianterne. */
+:root {
+  --content-font-size: 1.15rem;
+  /* prøv 1.1rem, 1.15rem eller 1.2rem */
+}
+
+/* Skal ramme .md-content__inner.md-typeset (selve artikel-elementet), ikke
+   den ydre .md-content-div — Material sætter font-size direkte på
+   .md-typeset, så en regel på .md-content alene bliver overskrevet. */
+.md-content__inner.md-typeset {
+  font-size: var(--content-font-size);
+  line-height: 1.7;
+}
+
+/* Admonitions og foldbare "details"-bokse (tips, advarsler, løsningsforslag)
+   har deres egen faste font-size i Material, uafhængig af artiklens —
+   uden dette forbliver boksene uændrede, når --content-font-size ændres.
+   0.8-faktoren bevarer Materials oprindelige forhold (bokse lidt mindre
+   end brødtekst), fremfor at gøre dem lige store. */
+.md-content__inner.md-typeset .admonition,
+.md-content__inner.md-typeset details {
+  font-size: calc(var(--content-font-size) * 0.8);
+}
+
+/* ===== Blødere tekstfarve i light mode ===== */
+/* Erstatter sort/hvid-kontrasten (--md-default-fg-color er som standard
+   sort med opacitet) med samme opacitetstrin på en mørk grå i stedet,
+   så det er mindre skærende at læse. Gælder kun light mode ("default"). */
+[data-md-color-scheme="default"] {
+  --md-default-fg-color: #333333de;
+  --md-default-fg-color--light: #3333338a;
+  --md-default-fg-color--lighter: #33333352;
+  --md-default-fg-color--lightest: #33333312;
+}
+
+/* ===== Tekststørrelse-knap ===== */
+/* Ekstra header-knap (indsat af javascripts/text-size.js) ved siden af
+   søgeikonet, stylet som Materials egne header-knapper (fx dark/light). */
+.text-size-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-size-toggle[data-current-size="small"] {
+  font-size: 0.75rem;
+}
+
+.text-size-toggle[data-current-size="normal"] {
+  font-size: 1rem;
+}
+
+.text-size-toggle[data-current-size="large"] {
+  font-size: 1.3rem;
+}
+
+/* Sætter --content-font-size om, så både brødtekst og bokse (se ovenfor)
+   skalerer sammen. "normal" bruger grundværdien defineret i :root. */
+body[data-text-size="small"] {
+  --content-font-size: 0.95rem;
+}
+
+body[data-text-size="large"] {
+  --content-font-size: 1.35rem;
+}
+
+/* ===== Indholdsfortegnelse (højre sidebar) ===== */
+/* Egen, dæmpet baggrundsfarve adskiller indholdsfortegnelsen visuelt fra
+   den hvide midtersektion, så opmærksomheden holdes på selve teksten.
+   --md-default-fg-color--lightest er allerede tema-tilpasset (fungerer i
+   både light og dark mode) og bruges samme sted som skillelinjen ovenfor.
+
+   Farven sættes på .md-sidebar__scrollwrap (ikke .md-sidebar--secondary
+   selv) — det er scrollwrap'en, Material via JS giver en reel højde
+   (matcher den synlige kolonnehøjde), mens den ydre sidebar-boks selv
+   forbliver 0 i CSS. En baggrund direkte på sidebaren ville derfor kun
+   dække et lille, "svævende" område i toppen.
+
+   .md-sidebar har som standard padding:1.2rem 0, som lægger et hvidt
+   mellemrum ovenpå scrollwrap'ens baggrund — fjernes for sekundær-
+   sidebaren, så baggrunden går helt op til headeren. */
+.md-sidebar--secondary {
+  padding-top: 0;
+}
+
+/* Material sætter margin:0 .2rem på scrollwrap'en, som ellers ville give
+   et smalt hvidt spring i begge sider af baggrunden — nulstillet her, så
+   farven dækker hele kolonnens bredde. Border-radius fjernet af samme
+   grund: baggrunden skal fylde hele sektionen, ikke se ud som et kort. */
+.md-sidebar--secondary .md-sidebar__scrollwrap {
+  background-color: var(--md-default-fg-color--lightest);
+  margin-left: 0;
+  margin-right: 0;
+  /* Det resterende mellemrum ovenfor kommer fra .md-main__inner sin
+     margin-top:1.5rem, som gælder hele rækken (venstremenu, indhold og
+     ToC). Trækkes op med negativ margin, og kompenseres med padding, så
+     selve "Indholdsfortegnelse"-teksten ikke rykker sig — kun baggrunden
+     udvides op til headeren. */
+  margin-top: -1.5rem;
+  padding-top: 1.5rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+/* Kun selve titlen ("Indholdsfortegnelse") er sticky med et indbygget
+   box-shadow-glow i Material — "Teori", "Øvelser" m.fl. er almindelige
+   links uden egen baggrund. (Reglen med box-shadow på .md-nav__link er
+   reelt kun for .md-nav--lifted, en anden navigationstype, ikke ToC'en —
+   at style den bredt gav fejlagtigt hvert link sin egen boks.)
+   Baggrunden sættes til transparent, ikke til den samme grå tone igen —
+   ellers lægges to lag af samme halvgennemsigtige farve oven i hinanden
+   (scrollwrap + titel), så titlen bliver mørkere end resten af listen. */
+.md-sidebar--secondary .md-nav__title {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* ===== Læse-fremgangsbjælke ===== */
+/* Lodret bjælke (indsat af javascripts/reading-progress.js), placeret som
+   skillelinje mellem hovedindholdet og indholdsfortegnelsen i højre side.
+   `left`, `top` og `height` sættes dynamisk af JS ud fra positionen af
+   .md-sidebar--secondary, .md-header og .md-footer, så bjælken kun dækker
+   det hvide indholdsområde — ikke header-banneret eller footeren. */
+/* --lighter (ikke --lightest) så linjen ikke smelter sammen med
+   indholdsfortegnelsens nye baggrundstone, som bruger --lightest. */
+#reading-progress-track {
+  position: fixed;
+  width: 2px;
+  background: var(--md-default-fg-color--lighter);
+  z-index: 10;
+  pointer-events: none;
+  display: none;
+}
+
+#reading-progress-fill {
+  width: 100%;
+  height: 0%;
+  background: var(--md-primary-fg-color);
+  transition: height 0.15s ease-out;
+}
+
+/* ===== Fagfarver ===== */
+
+/* Programmering: teal */
+body[data-fag="programmering"] {
+  --md-primary-fg-color: #00796b;
+}
+
+/* Matematik: behagelig rød (dæmpet teglrød) */
+body[data-fag="matematik"] {
+  --md-primary-fg-color: #ad3e3e;
+}
+
+/* Fysik: behagelig blå */
+body[data-fag="fysik"] {
+  --md-primary-fg-color: #3565a0;
+}

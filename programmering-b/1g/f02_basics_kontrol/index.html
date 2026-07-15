@@ -1,0 +1,1650 @@
+
+<!doctype html>
+<html lang="da" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://poltexious.github.io/undervisning/programmering-b/1g/f02_basics_kontrol/">
+      
+      
+        <link rel="prev" href="../f01_intro_logbog/">
+      
+      
+        <link rel="next" href="../f03_metoder_dekomponering/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>F02 Basics & kontrolstrukturer - Undervisning – Jakob Polcwiartek</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#f02-basics-kontrolstrukturer" class="md-skip">
+          Gå til indholdet
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Sidehoved">
+    <a href="https://aatg.dk/studieretninger/gametech/" title="Undervisning – Jakob Polcwiartek" class="md-header__button md-logo" aria-label="Undervisning – Jakob Polcwiartek" data-md-component="logo">
+      
+  <img src="../../../assets/images/aatg-logo-hvid.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Undervisning – Jakob Polcwiartek
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              F02 Basics & kontrolstrukturer
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="deep-orange"  aria-label="Skift til light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Skift til light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="deep-orange"  aria-label="Skift til dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Skift til dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Søg" placeholder="Søg" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Søg">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Nulstil søgning" aria-label="Nulstil søgning" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Start søgning
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Faner" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Forside
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../matematik/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Matematik
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../fysik/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Fysik
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  Programmering B
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://aatg.dk/studieretninger/gametech/" title="Undervisning – Jakob Polcwiartek" class="md-nav__button md-logo" aria-label="Undervisning – Jakob Polcwiartek" data-md-component="logo">
+      
+  <img src="../../../assets/images/aatg-logo-hvid.svg" alt="logo">
+
+    </a>
+    Undervisning – Jakob Polcwiartek
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Forside
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../matematik/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matematik
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fysik/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fysik
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programmering B
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Programmering B
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oversigt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.g
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1.g
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overblik
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../f01_intro_logbog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F01 Intro, værktøjer & logbog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F02 Basics & kontrolstrukturer
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F02 Basics & kontrolstrukturer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indholdsfortegnelse">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indholdsfortegnelse
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#om-forlbet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Om forløbet
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lektionsplan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lektionsplan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teori" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teori
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Teori">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variabler-og-datatyper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variabler og datatyper
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-og-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Input og output
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ifelse-beslutninger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        if/else — beslutninger
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-flervalgsbeslutninger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        switch — flervalgsbeslutninger
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lkker-while-og-do-while" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Løkker: while og do-while
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-lkken" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        for-løkken
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-simpel-kamplkke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        En simpel kampløkke
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#velser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Øvelser
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Øvelser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#velse-1-livspoint-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Øvelse 1 — Livspoint-tracker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#velse-2-skadeberegning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Øvelse 2 — Skadeberegning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#velse-3-gt-et-tal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Øvelse 3 — Gæt et tal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#velse-4-simpel-kamplkke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Øvelse 4 — Simpel kampløkke
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bunden-opgave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bunden opgave
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aflevering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aflevering
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../f03_metoder_dekomponering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F03 Metoder & dekomponering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../f04_arrays_lister_algoritmer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F04 Arrays, lister & algoritmer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../f05_oop_light/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F05 OOP light
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../f06_miniprojekt_konsolspil/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F06 Mini-projekt: konsolspil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2g/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.g
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3g/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.g
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indholdsfortegnelse">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indholdsfortegnelse
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#om-forlbet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Om forløbet
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lektionsplan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lektionsplan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teori" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teori
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Teori">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variabler-og-datatyper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variabler og datatyper
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-og-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Input og output
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ifelse-beslutninger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        if/else — beslutninger
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-flervalgsbeslutninger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        switch — flervalgsbeslutninger
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lkker-while-og-do-while" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Løkker: while og do-while
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-lkken" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        for-løkken
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-simpel-kamplkke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        En simpel kampløkke
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#velser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Øvelser
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Øvelser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#velse-1-livspoint-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Øvelse 1 — Livspoint-tracker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#velse-2-skadeberegning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Øvelse 2 — Skadeberegning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#velse-3-gt-et-tal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Øvelse 3 — Gæt et tal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#velse-4-simpel-kamplkke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Øvelse 4 — Simpel kampløkke
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bunden-opgave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bunden opgave
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aflevering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aflevering
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="f02-basics-kontrolstrukturer">F02 – Basics &amp; kontrolstrukturer</h1>
+<div class="admonition abstract">
+<p class="admonition-title">Læringsmål</p>
+<p>Efter forløbet kan du:</p>
+<ul>
+<li>erklære og bruge variabler af de grundlæggende datatyper (<code>int</code>, <code>double</code>, <code>bool</code>, <code>string</code>)</li>
+<li>læse input fra brugeren og skrive formateret output</li>
+<li>styre et programs forløb med <code>if</code>/<code>else</code> og <code>switch</code></li>
+<li>gentage kode med <code>while</code>, <code>do-while</code> og <code>for</code></li>
+<li>kombinere det ovenstående i et lille, sammenhængende program</li>
+</ul>
+</div>
+<h2 id="om-forlbet">Om forløbet</h2>
+<p><strong>Varighed:</strong> 7 timer.</p>
+<p>Dette er faget grundmur: variabler og kontrolstrukturer er de byggesten, alt andet i faget bygger videre på — metoder (F03), lister og algoritmer (F04) og klasser (F05) er alle sammen "mere af det samme" oven på det, du lærer her.</p>
+<p>Vi arbejder bevidst med spilrelaterede eksempler hele vejen igennem: livspoint, skadeberegning, gæt-et-tal og en simpel kampløkke. Det er ikke tilfældigt — det er præcis den slags logik, der ligger bag selv simple spilmekanikker i Unity.</p>
+<h2 id="lektionsplan">Lektionsplan</h2>
+<p><strong>Time 1 — Variabler og datatyper</strong></p>
+<ul>
+<li><code>int</code>, <code>double</code>, <code>bool</code>, <code>string</code></li>
+<li>Deklaration, initialisering og tildeling</li>
+<li>Navngivning af variabler</li>
+</ul>
+<p><strong>Time 2 — Input, output og strenginterpolation</strong></p>
+<ul>
+<li><code>Console.ReadLine()</code></li>
+<li>Konvertering af tekst til tal (<code>int.Parse</code>, <code>double.Parse</code>)</li>
+<li>Strenginterpolation med <code>$"..."</code></li>
+</ul>
+<p><strong>Time 3 — Beslutninger: if/else</strong></p>
+<ul>
+<li>Boolske udtryk og sammenligningsoperatorer</li>
+<li><code>if</code>, <code>else if</code>, <code>else</code></li>
+<li>Logiske operatorer: <code>&amp;&amp;</code>, <code>||</code>, <code>!</code></li>
+</ul>
+<p><strong>Time 4 — Beslutninger: switch</strong></p>
+<ul>
+<li><code>switch</code>-udtryk som alternativ til lange <code>if/else</code>-kæder</li>
+<li>Hvornår giver <code>switch</code> mere overblik end <code>if/else</code>?</li>
+</ul>
+<p><strong>Time 5 — Løkker: while og do-while</strong></p>
+<ul>
+<li><code>while</code>-løkken: gentag, mens en betingelse er sand</li>
+<li><code>do-while</code>: gentag mindst én gang</li>
+<li>Undgå uendelige løkker</li>
+</ul>
+<p><strong>Time 6 — Løkker: for og kampløkken</strong></p>
+<ul>
+<li><code>for</code>-løkken og dens tre dele</li>
+<li>Kombination af løkke og betingelse: en simpel kampløkke</li>
+</ul>
+<p><strong>Time 7 — Bunden opgave</strong></p>
+<ul>
+<li>Selvstændigt arbejde med den bundne opgave</li>
+<li>Aflevering og logbog</li>
+</ul>
+<h2 id="teori">Teori</h2>
+<h3 id="variabler-og-datatyper">Variabler og datatyper</h3>
+<p>En variabel er en navngivet plads i hukommelsen, der gemmer en værdi. I C# skal du angive variablens <strong>type</strong>, når du erklærer den:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">liv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">skadeMultiplikator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.5</span><span class="p">;</span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">erILive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">;</span>
+<span class="kt">string</span><span class="w"> </span><span class="n">navn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Aria&quot;</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li><code>int</code> — heltal (uden decimaler)</li>
+<li><code>double</code> — decimaltal</li>
+<li><code>bool</code> — sand/falsk (<code>true</code>/<code>false</code>)</li>
+<li><code>string</code> — tekst</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Spilperspektiv</p>
+<p>Stort set alle tal, du ser i et spils UI — livspoint, mana, guld, XP — er variabler af typen <code>int</code> eller <code>double</code> bag kulisserne.</p>
+</div>
+<h3 id="input-og-output">Input og output</h3>
+<p>Du læser tekst fra brugeren med <code>Console.ReadLine()</code>. Den returnerer altid en <code>string</code>, så tal skal konverteres eksplicit:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Indtast dine livspoint: &quot;</span><span class="p">);</span>
+<span class="kt">string</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">liv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">input</span><span class="p">);</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Du har {liv} livspoint.&quot;</span><span class="p">);</span>
+</code></pre></div>
+<p><code>$"..."</code> er <strong>strenginterpolation</strong> — sæt en variabel direkte ind i en tekststreng med <code>{}</code>.</p>
+<h3 id="ifelse-beslutninger">if/else — beslutninger</h3>
+<p>Et program skal ofte reagere forskelligt afhængigt af en tilstand. Det gør vi med <code>if</code>/<code>else</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">liv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">liv</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Karakteren er død.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span><span class="w"> </span><span class="nf">if</span><span class="w"> </span><span class="p">(</span><span class="n">liv</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">30</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Advarsel: lavt liv!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Karakteren har det fint.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Sammenligningsoperatorer: <code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>. Logiske operatorer kombinerer flere betingelser: <code>&amp;&amp;</code> (og), <code>||</code> (eller), <code>!</code> (ikke).</p>
+<h3 id="switch-flervalgsbeslutninger">switch — flervalgsbeslutninger</h3>
+<p>Når du har mange faste muligheder at vælge imellem, kan <code>switch</code> give bedre overblik end en lang <code>if/else</code>-kæde:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">string</span><span class="w"> </span><span class="n">vaabenType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;sværd&quot;</span><span class="p">;</span>
+
+<span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">vaabenType</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;sværd&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Skade: 10&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;bue&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Skade: 7&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;stav&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Skade: 12&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">default</span><span class="p">:</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Ukendt våben.&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="lkker-while-og-do-while">Løkker: while og do-while</h3>
+<p>En <code>while</code>-løkke gentager kode, så længe en betingelse er sand:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">liv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
+
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">liv</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">liv</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Liv tilbage: {liv}&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><code>do-while</code> minder om <code>while</code>, men tjekker betingelsen <strong>efter</strong> første gennemløb — koden kører altså altid mindst én gang. Det er velegnet til fx menuer, hvor brugeren skal have mulighed for at prøve mindst én gang:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">string</span><span class="w"> </span><span class="n">svar</span><span class="p">;</span>
+<span class="k">do</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Vil du fortsætte? (ja/nej): &quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">svar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+<span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">svar</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s">&quot;nej&quot;</span><span class="p">);</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Uendelige løkker</p>
+<p>Hvis betingelsen aldrig bliver falsk, kører løkken for evigt, og programmet "hænger". Tjek altid, at noget inde i løkken faktisk kan ændre betingelsen.</p>
+</div>
+<h3 id="for-lkken">for-løkken</h3>
+<p><code>for</code>-løkken bruges typisk, når du på forhånd ved, hvor mange gange noget skal gentages:</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Runde {i}&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>De tre dele er: <strong>start</strong> (<code>int i = 1</code>), <strong>betingelse</strong> (<code>i &lt;= 5</code>) og <strong>opdatering</strong> (<code>i++</code>).</p>
+<h3 id="en-simpel-kamplkke">En simpel kampløkke</h3>
+<p>Nu kombinerer vi variabler, <code>if</code>/<code>else</code> og en løkke til en meget simpel kampsimulation:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">spillerLiv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">30</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">fjendeLiv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">30</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">runde</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">spillerLiv</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">fjendeLiv</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">fjendeLiv</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="w">    </span><span class="n">spillerLiv</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Runde {runde}: Spiller={spillerLiv}, Fjende={fjendeLiv}&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">runde</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">spillerLiv</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Du tabte kampen.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Du vandt kampen!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Dette er stadig en meget forenklet model — men princippet (gentag, opdatér tilstand, tjek betingelse) går igen i stort set alle kampsystemer, du senere vil møde i Unity.</p>
+<h2 id="velser">Øvelser</h2>
+<h3 id="velse-1-livspoint-tracker"><img alt="🟢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f7e2.svg" title=":green_circle:" /> Øvelse 1 — Livspoint-tracker</h3>
+<p>Skriv et program, der erklærer en variabel <code>liv</code> med værdien 100, trækker 25 fra, og udskriver resultatet med strenginterpolation.</p>
+<details class="success">
+<summary>Løsningsforslag</summary>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">liv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
+<span class="n">liv</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">25</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Liv tilbage: {liv}&quot;</span><span class="p">);</span>
+</code></pre></div>
+</details>
+<h3 id="velse-2-skadeberegning"><img alt="🟡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f7e1.svg" title=":yellow_circle:" /> Øvelse 2 — Skadeberegning</h3>
+<p>Bed brugeren om at indtaste en skade (heltal) og karakterens nuværende liv. Beregn det resterende liv, og udskriv "Karakteren er død" hvis liv er 0 eller derunder, ellers udskriv det resterende liv.</p>
+<details class="success">
+<summary>Løsningsforslag</summary>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Indtast liv: &quot;</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">liv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Indtast skade: &quot;</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">skade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">resterendeLiv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">liv</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">skade</span><span class="p">;</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">resterendeLiv</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Karakteren er død.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Liv tilbage: {resterendeLiv}&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<h3 id="velse-3-gt-et-tal"><img alt="🔴" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f534.svg" title=":red_circle:" /> Øvelse 3 — Gæt et tal</h3>
+<p>Programmet vælger tallet 42 (fastsat i koden). Brugeren gætter i en løkke, og programmet svarer "for højt", "for lavt" eller "korrekt!", indtil brugeren gætter rigtigt.</p>
+<details class="success">
+<summary>Løsningsforslag</summary>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">hemmeligtTal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">42</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">gaet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">gaet</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">hemmeligtTal</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Gæt et tal: &quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">gaet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">gaet</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">hemmeligtTal</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;For lavt!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="nf">if</span><span class="w"> </span><span class="p">(</span><span class="n">gaet</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">hemmeligtTal</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;For højt!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">else</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Korrekt!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<h3 id="velse-4-simpel-kamplkke"><img alt="🔴" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f534.svg" title=":red_circle:" /> Øvelse 4 — Simpel kampløkke</h3>
+<p>Tag udgangspunkt i eksemplet fra teoriafsnittet. Udvid det, så skaden hver runde er tilfældig mellem 1 og 10 (brug <code>Random</code>), og så programmet til sidst udskriver, hvor mange runder kampen varede.</p>
+<details class="success">
+<summary>Løsningsforslag</summary>
+<div class="highlight"><pre><span></span><code><span class="n">Random</span><span class="w"> </span><span class="n">tilfaeldig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Random</span><span class="p">();</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">spillerLiv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">30</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">fjendeLiv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">30</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">runde</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">spillerLiv</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">fjendeLiv</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">skadeTilFjende</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tilfaeldig</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">11</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">skadeTilSpiller</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tilfaeldig</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">11</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">fjendeLiv</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">skadeTilFjende</span><span class="p">;</span>
+<span class="w">    </span><span class="n">spillerLiv</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">skadeTilSpiller</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Runde {runde}: Spiller={spillerLiv}, Fjende={fjendeLiv}&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">runde</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Kampen varede {runde - 1} runder.&quot;</span><span class="p">);</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">spillerLiv</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Du tabte kampen.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Du vandt kampen!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<h2 id="bunden-opgave">Bunden opgave</h2>
+<p>Skriv et konsolprogram, <strong>Duel</strong>, der simulerer en kamp mellem spilleren og en fjende:</p>
+<ol>
+<li>Spilleren indtaster sit navn og sine startlivspoint.</li>
+<li>Fjenden har faste startlivspoint (fx 50) sat i koden.</li>
+<li>Kampen foregår i en løkke, hvor der hver runde trækkes tilfældig skade fra begge parter.</li>
+<li>Brug <code>if</code>/<code>else</code> til at afgøre, om kampen er slut.</li>
+<li>Brug en <code>switch</code> til at give en kort, forskellig sluttekst afhængigt af, om spilleren vandt, tabte, eller kampen endte uafgjort (begge har 0 liv samme runde).</li>
+</ol>
+<p>Opgaven skal bruge <strong>mindst</strong>: variabler, input/output, <code>if</code>/<code>else</code>, <code>switch</code> og en løkke.</p>
+<div class="admonition tip">
+<p class="admonition-title">Unity-perspektiv</p>
+<p>Denne opgave er i virkeligheden en tekstbaseret udgave af det, der i Unity ville hedde et <em>turn-based combat system</em> — logikken er den samme, kun præsentationen (grafik i stedet for tekst) er anderledes.</p>
+</div>
+<h2 id="aflevering">Aflevering</h2>
+<ol>
+<li>Kildekoden til <strong>Duel</strong>-programmet.</li>
+<li>Logbogsindlæg for hver af de 7 timer i forløbet.</li>
+<li>En kort skriftlig refleksion (3-5 linjer) i logbogen: hvilken kontrolstruktur var sværest at forstå, og hvorfor?</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2026 Jakob Polcwiartek
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Kopieret til udklipsholderen", "clipboard.copy": "Kopi\u00e9r til udklipsholderen", "search.result.more.one": "1 resultat mere p\u00e5 denne side", "search.result.more.other": "# resultater mere p\u00e5 denne side", "search.result.none": "Ingen resultater fundet", "search.result.one": "1 resultat", "search.result.other": "# resultater", "search.result.placeholder": "Indtast s\u00f8geord", "search.result.term.missing": "Mangler", "select.version": "V\u00e6lg version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/logo-link.js"></script>
+      
+        <script src="../../../javascripts/fag-farver.js"></script>
+      
+        <script src="../../../javascripts/text-size.js"></script>
+      
+        <script src="../../../javascripts/reading-progress.js"></script>
+      
+    
+  </body>
+</html>
