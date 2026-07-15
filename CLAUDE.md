@@ -38,6 +38,7 @@ Når du skriver eller redigerer undervisningsindhold under `docs/`, gælder:
 - Struktur pr. forløb: læringsmål → motivation ("hvorfor") → teori med eksempel → øvelser med stigende sværhedsgrad → foldbart løsningsforslag.
 - Kodeeksempler: C#, korte og fokuserede; én pointe pr. eksempel.
 - Sprog: klart dansk, fagbegreber forklares første gang de bruges.
+- Sværhedsgrad på øvelser markeres med en farvet cirkel i overskriften: `:green_circle: Let`, `:yellow_circle: Mellem`, `:red_circle: Svær` (emoji-shortcodes, understøttet via `pymdownx.emoji` i `mkdocs.yml`).
 
 ## Architecture
 

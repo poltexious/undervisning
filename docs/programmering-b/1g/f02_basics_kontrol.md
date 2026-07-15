@@ -216,7 +216,7 @@ Dette er stadig en meget forenklet model — men princippet (gentag, opdatér ti
 
 ## Øvelser
 
-### Øvelse 1 — Livspoint-tracker (let)
+### Øvelse 1 — Livspoint-tracker :green_circle: Let
 
 Skriv et program, der erklærer en variabel `liv` med værdien 100, trækker 25 fra, og udskriver resultatet med strenginterpolation.
 
@@ -228,7 +228,7 @@ Skriv et program, der erklærer en variabel `liv` med værdien 100, trækker 25 
     Console.WriteLine($"Liv tilbage: {liv}");
     ```
 
-### Øvelse 2 — Skadeberegning (medium)
+### Øvelse 2 — Skadeberegning :yellow_circle: Mellem
 
 Bed brugeren om at indtaste en skade (heltal) og karakterens nuværende liv. Beregn det resterende liv, og udskriv "Karakteren er død" hvis liv er 0 eller derunder, ellers udskriv det resterende liv.
 
@@ -253,7 +253,7 @@ Bed brugeren om at indtaste en skade (heltal) og karakterens nuværende liv. Ber
     }
     ```
 
-### Øvelse 3 — Gæt et tal (medium/svær)
+### Øvelse 3 — Gæt et tal :red_circle: Svær
 
 Programmet vælger tallet 42 (fastsat i koden). Brugeren gætter i en løkke, og programmet svarer "for højt", "for lavt" eller "korrekt!", indtil brugeren gætter rigtigt.
 
@@ -283,7 +283,7 @@ Programmet vælger tallet 42 (fastsat i koden). Brugeren gætter i en løkke, og
     }
     ```
 
-### Øvelse 4 — Simpel kampløkke (svær)
+### Øvelse 4 — Simpel kampløkke :red_circle: Svær
 
 Tag udgangspunkt i eksemplet fra teoriafsnittet. Udvid det, så skaden hver runde er tilfældig mellem 1 og 10 (brug `Random`), og så programmet til sidst udskriver, hvor mange runder kampen varede.
 

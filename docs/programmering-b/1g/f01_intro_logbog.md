@@ -105,7 +105,7 @@ Logbogen er et kort, løbende notat du fører for hver undervisningsgang. Et log
 
 ## Øvelser
 
-### Øvelse 1 — Hils på verden (let)
+### Øvelse 1 — Hils på verden :green_circle: Let
 
 Skriv et konsolprogram, der udskriver dit navn, din klasse og en kort sætning om, hvorfor du har valgt Programmering B.
 
@@ -117,7 +117,7 @@ Skriv et konsolprogram, der udskriver dit navn, din klasse og en kort sætning o
     Console.WriteLine("Jeg valgte Programmering B, fordi jeg gerne vil lære at lave spil.");
     ```
 
-### Øvelse 2 — Karakterark (medium)
+### Øvelse 2 — Karakterark :yellow_circle: Mellem
 
 Udskriv en simpel præsentation af en fiktiv spilkarakter med mindst fire linjer: navn, klasse (fx kriger/troldmand), livspoint og et angreb.
 
@@ -131,7 +131,7 @@ Udskriv en simpel præsentation af en fiktiv spilkarakter med mindst fire linjer
     Console.WriteLine("Angreb: Sværdhug");
     ```
 
-### Øvelse 3 — Byg videre selv (svær)
+### Øvelse 3 — Byg videre selv :red_circle: Svær
 
 Udvid dit program fra Øvelse 2, så det udskriver mindst to karakterer efter hinanden, adskilt af en tydelig streg (fx `"--------"`). Eksperimentér også bevidst med at lave en fejl (fx glem en anførselstegn) for at øve dig i at læse fejlmeddelelsen — ret den derefter.
 
