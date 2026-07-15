@@ -21,10 +21,11 @@ theme:
         icon: material/weather-night
         name: Skift til light mode
 
+copyright: "© BUILD_YEAR Jakob Polcwiartek"
+
 extra:
   homepage: https://aatg.dk/studieretninger/gametech/
   generator: false
-  copyright: "© 2026 Jakob Polcwiartek"
 
 extra_css:
   - stylesheets/extra.css
